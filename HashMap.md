@@ -8,7 +8,7 @@ One object is used as a key (index) to another object (value). It can store diff
 Create a HashMap object called capitalCities that will store String keys and String values:
 ```java
 import java.util.HashMap; // import the HashMap class
-HashMap<String, String> capitalCities = new HashMap<String, String>();
+HashMap<String, String> capitalCities = new HashMap<>();
 ```
 
 ## add items
@@ -20,7 +20,7 @@ import java.util.HashMap;
 public class Main {
   public static void main(String[] args) {
     // Create a HashMap object called capitalCities
-    HashMap<String, String> capitalCities = new HashMap<String, String>();
+    HashMap<String, String> capitalCities = new HashMap<>();
 
     // Add keys and values (Country, City)
     capitalCities.put("England", "London");
