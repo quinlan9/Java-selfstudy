@@ -90,3 +90,85 @@ BMW
 Ford
 Mazda
 ```
+
+## other types
+```java
+import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+    myNumbers.add(10);
+    myNumbers.add(15);
+    myNumbers.add(20);
+    myNumbers.add(25);
+    for (int i : myNumbers) {
+      System.out.println(i);
+    }
+  }
+}
+
+output:
+10
+15
+20
+25
+```
+
+## sort an ArrayList
+```java
+import java.util.ArrayList;
+import java.util.Collections;  // Import the Collections class
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    Collections.sort(cars);  // Sort cars
+    for (String i : cars) {
+      System.out.println(i);
+    }
+  }
+}
+
+output:
+BMW
+Ford
+Mazda
+Volvo
+```
+
+sort an ArrayList of integers:
+```java
+import java.util.ArrayList;
+import java.util.Collections;  // Import the Collections class
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<Integer> myNumbers = new ArrayList<Integer>();
+    myNumbers.add(33);
+    myNumbers.add(15);
+    myNumbers.add(20);
+    myNumbers.add(34);
+    myNumbers.add(8);
+    myNumbers.add(12);
+
+    Collections.sort(myNumbers);  // Sort myNumbers
+
+    for (int i : myNumbers) {
+      System.out.println(i);
+    }
+  }
+}
+
+output:
+8
+12
+15
+20
+33
+34
+```
