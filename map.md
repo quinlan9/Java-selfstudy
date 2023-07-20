@@ -20,3 +20,24 @@ output:
 {One=1, Two=2, Three=3}
 ```
 Java的HashMap类实现的是Map接口，它根据哈希函数存储键值对。这就意味着它不保证映射的顺序，特别是它不保证该顺序恒定不变。你可能看到的任何特定顺序都是偶然的，都可能随着元素的插入和删除而改变。
+
+## Map.getOrDefault()
+Map中会存储一一对应的key和value。  
+如果 在Map中存在key，则返回key所对应的的value。  
+如果 在Map中不存在key，则返回默认值。  
+```java
+public class Demo {
+    public static void main(String[] args) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("张三", 23);
+        map.put("赵四", 24);
+        map.put("王五", 25);
+        String age= map.getOrDefault("赵四", 30);
+        System.out.println(age);// 24，map中存在"赵四",使用其对应值24
+        String age = map.getOrDefault("刘能", 30);
+        System.out.println(age);// 30，map中不存在"刘能",使用默认值30
+    }
+}
+```
+第一个输出为24，因为已经输入了（’'赵四"，24）的数据，所以返回其value值（24）；  
+第二个输出为30，因为在Map中不存在"刘能"这个key值，所以返回getOrDefault()方法中的默认值。
