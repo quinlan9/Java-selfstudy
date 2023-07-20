@@ -51,3 +51,6 @@ capitalCities.remove("England");
 ```java
 capitalCities.clear();
 ```
+
+## entrySet()
+[entrySet](https://blog.csdn.net/m0_43410048/article/details/105853164)
