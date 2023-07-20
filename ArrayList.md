@@ -172,3 +172,7 @@ output:
 33
 34
 ```
+## get index
+int n1=list.indexOf(ele);  
+int n2=list.lastIndexOf(ele);
+[example](https://github.com/quinlan9/leetcode-solution/blob/main/697.%20degree-of-an-array.md)
